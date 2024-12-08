@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="styleCompra.css">
     <link rel="stylesheet" href="detalle.css">
+    <link rel="stylesheet" href="stylesFooter.css">
 </head>
 <body>
     <header>
@@ -28,22 +29,9 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <img src="/Camaras/Instant Polaroid/PrincipalPol.webp" alt="Principal">
-        <section>
-            <h3>Instant Polaroid</h3>
-            <p>Camara</p>
-            <p>$199.99</p>
-            <p>La pionera de la fotografía instantánea, famosa por su rapidez y estética única. Captura momentos y obtén tus fotos al instante con un toque nostálgico.</p>
-            <button>Comprar Ahora</button>
-        </section>
-    </div>
-    <div class="container-img">
-        <img src="/Camaras/Instant Polaroid/2.webp" alt="">
-        <img src="/Camaras/Instant Polaroid/3.webp" alt="">
-        <img src="/Camaras/Instant Polaroid/4.webp" alt="">
-    </div>
-
+    <div id="producto-detalle" class="producto-detalle"></div>
+    <div id="imagenes" class="producto-detalle"></div>
+   
     <footer class="footer">
         <div class="footer-icons">
             <a href="#" class="icon spotify"><i class="fa-brands fa-spotify"></i></a>
@@ -55,6 +43,7 @@
             <p>Neon Memories.</p>
         </div>
     </footer>
+    <script type="module" src="detalle.js"></script>
     <script src="/Presentacion/script.js"></script>
 </body>
 </html>

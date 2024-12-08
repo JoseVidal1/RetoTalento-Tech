@@ -13,36 +13,51 @@
     background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
     background-position: center; /* Centra la imagen */
+    height: 100%;
 }
-
-.header-class section p{
+.header-class section {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.header-class p{
     text-align: center;
     padding-top: 1rem;
-    width: 40%;
     margin: 0 auto;
+    font-size: 1.2rem;
 }
 .header-class h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .header-class {
     padding: 6rem;
 }
 .card {
-    width:30%;
+    width:60%;
     margin: 0 auto;
     color: white;
     font-family:'Inter';
+    display: flex;
+    margin-bottom: 0.8rem;
 }
 .card-body {
 float: left;
 }
 .card-title{
     text-decoration: none;
-    color: white;
+    color:white;
+    background-color: #161618;
     font-size: 20px;
     padding-bottom: 30px;
     text-align: left;
     font-weight: bold;
+    border: none;
+}
+.card-title:hover {
+    cursor: pointer;
+    color: red;
+
 }
 .img-fluid {
  width: 50%;
@@ -58,10 +73,13 @@ float: left;
 
 
 .card2 {
-    width:30%;
+    width:60%;
     margin: 0 auto;
     color: white;
     font-family:'Inter';
+    display: flex;
+    margin-bottom: 0.8rem;
+  
 }
 
 .card-title2{
@@ -71,7 +89,15 @@ float: left;
     padding-bottom: 30px;
     text-align: left;
     font-weight: bold;
+    background-color: #161618;
+    border: none;
+
 }
+.card-title2:hover {
+    cursor: pointer;
+    color: red;
+}
+
 .img-fluid2 {
  width: 50%;
  float: right;
@@ -87,6 +113,6 @@ float: left;
 .container-cb {
     width: 100%;
 }
-.container-cb div {
+.container-cb div{
     margin:0 auto;
 }
