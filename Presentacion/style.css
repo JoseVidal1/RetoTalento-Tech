@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+
+    width: 100%;
+    height: 100%;
+    background: #161618;
+    overflow-x: hidden;
+}
+
+/*Comienzo Barra Navbar */
+
+.navbar{
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    height: 80px;
+    background: #161618;
+}
+#bar{
+    display: none;
+}
+.logo{
+    width: 100px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li {
+    margin:20px;
+}
+.nav ul li a{
+     color: white;
+     font-size: 25px;
+     font-weight: bold;
+     letter-spacing: 1px;
+}
+.nav ul li a:hover{
+    color: #ff0000;
+    font-style: italic;
+    width: 100%;
+    height: 2px;
+}
+.nav ul li i{
+    color: white;
+}
+.nav ul li i:hover{
+    color:#ff0000;
+}
+.navbar i{
+    color: white;
+}
+
+/*responsive para Navbar*/
+
+@media(max-width:920px){
+    .nav{
+        position: relative;
+        justify-content: space-between;
+    }
+    #bar{
+        display: block;
+        font-size: 2rem;
+        margin-right: 10px;
+        cursor: pointer;
+        right: 0;
+        position: fixed;
+        
+    }
+    .logo{
+        margin-left: 30px;
+        z-index: 1000;
+    }
+    .nav{
+        position: absolute;
+        left: 0;
+        top:0;
+        box-shadow: #07000000 4px 3px 2px;
+        z-index: 10001;
+        width: 300px;
+        height: 100vh;
+        background: #161618;
+        transform: translate(-100%);
+        transition: .8s ease;
+        opacity: 0;
+    }
+    .nav.active{
+        transform: translate(0%);
+        opacity: 1;
+    }
+    .nav ul{
+        display: block;
+    }
+
+}
+
+@media(max-width:600px){
+    .navbar{
+        padding: 10px 8px;
+    }
+    .log img{
+        width: 120px;
+    }
+    #bar{
+        position: fixed;
+        right: 0;
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media(max-width:400px){
+    .logo{
+        margin-left: 7px;
+    }
+    #bar{
+        margin-right: 7px;
+    }
+}
+@media(max-width:343px){
+    .nav{
+        width: 200px;
+    }
+}
+/*Final Navbar*/
+
+.content{
+    width: 100%;
+    min-height: 840px;
+    overflow: hidden;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Fotografias/breezeh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(7px);
+    z-index: -1;
+    transition: 2s ease;
+}
+
+.content .text h1 {
+    z-index: 1;
+    margin-left: 100px;
+    margin-top: 200px;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 6rem;
+    line-height: 1.2;
+    color: white;
+}
+
+.content .text p {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+}
+
+
+.text .shop-btn {
+    padding: 18px 40px;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    margin-left: 100px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 100;
+    transition: 2s ease;
+    cursor: pointer;
+}
+
+.text .socialMedia {
+    margin-left: 100px;
+    margin-top: 80px;
+    color:white;
+}
+.text .socialMedia a{
+    color: white;
+}
+.text .socialMedia i{
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .text h1 {
+        font-size: 4rem;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+    .text p {
+        font-size: 1.3rem;
+        margin-left: 50px;
+        width: 90%;
+    }
+    .text .shop-btn,
+    .text .socialMedia {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 670px) {
+    .text h1 {
+        font-size: 4.5rem;
+        margin-left: 30px;
+        margin-top: 120px;
+    }
+    .text p {
+        font-size: 1.2rem;
+        margin-left: 30px;
+    }
+    .text .shop-btn,
+    .text .socialMedia {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .text h1 {
+        font-size: 4rem;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    .text p {
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+    .text .shop-btn,
+    .text .socialMedia {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .text h1 {
+        font-size: 3rem;
+        margin-left: 15px;
+        margin-top: 80px;
+    }
+    .text p {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+    .text .shop-btn {
+        padding: 16px 30px;
+        margin-left: 15px;
+    }
+    .text .socialMedia {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 311px) {
+    .text h1 {
+        font-size: 2rem; 
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+    .text p {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+    .text .shop-btn {
+        padding: 15px 25px;
+        margin-left: 10px;
+    }
+   
+}
