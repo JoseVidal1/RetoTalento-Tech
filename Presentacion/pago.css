@@ -1,42 +1,96 @@
-.form-container{
-    padding: 20px;
-    width: 30rem;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161618;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.form-container h3{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-.contact-form{
-    display: grid;
-    row-gap: 1rem;
-}
-.contact-form input, 
-.contact-form textarea{
+
+.form-container {
     width: 100%;
-    border: none;
-    outline: none;
-    background: #161618;
+    max-width: 400px;
+    background-color:#2e2e31;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="month"] {
+    width: 100%;
     padding: 10px;
-    font-size: 0.9rem;
-    color: white;
-    border-radius: 0.4rem;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
-.contact-form textarea{
-    resize: none;
-    height: 200px;
-}
-.contact-form .send-button{
-    border: none;
+
+input:focus {
+    border-color: #007bff;
     outline: none;
-    background: #161618;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
+}
+
+.form-container input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Botones */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
-.contact-form .send-button:hover{
-    background-color: black;
-    transition: 0.3s all linear;
+
+button:hover {
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background-color: #161618;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #161618;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px 20px;
+    }
+    input[type="text"], input[type="email"], input[type="month"], button {
+        font-size: 14px;
+    }
 }

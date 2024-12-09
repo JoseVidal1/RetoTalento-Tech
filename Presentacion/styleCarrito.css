@@ -1,12 +1,14 @@
 #carrito-container {
-    border: 1px solid #ddd;
+    border: 1px solid #27272c;
     padding: 1rem;
-    background-color: #f8f9fa;
+    background-color: #27272c;
     width: clamp(250px, 20%, 400px);
     margin-right: 1rem;
     position: fixed;
     top: 3.2rem;
-    color: #333;
+    color:white;
+    font-weight: bold;
+    margin-top: 1rem;
     right: 0;
     border-radius: 4px;
     display: block;
@@ -17,12 +19,15 @@
 }
 #carrito-container li {
     margin-bottom: 0.5rem;
-
+}
 #carrito-container button {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    width: auto;
+    text-align: center;
+    background-color: #161618;
+    color: red;
 }
+
 #carrito-container button:hover {
     background-color: #dc3545;
     color: white;
@@ -41,4 +46,4 @@
         font-size: 0.9rem;
         width: auto;
     }
-}}
+}

@@ -11,52 +11,42 @@
     <link rel="stylesheet" href="pago.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="Home.html" class="logo"><img src="/Logo/NeonMemories.png" alt="logo"></a>
-            <i class="fa-sharp fa-solid fa-bars-staggered" id="bar"></i>
-            <div class="nav" id="nv">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="compra.html">Shop</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li>
-                        <button id="btn-carrito" style="background-color: transparent; border: none;"><i class="fa-solid fa-cart-shopping" id="carrito"></i></button>
-                    </li>
-                </ul>
-                
-            </div>
-            
-        </nav>
-        
-    </header>
     <div class="form-container">
         <h2>Datos de Pago</h2>
         <form class="contact-form" id="payment-form" action="" onsubmit="return validateForm()">
-            <label for="tarjeta">Número de Tarjeta</label>
-            <input type="text" id="tarjeta" name="tarjeta" placeholder="1234 5678 9012 3456">
-        
+            <!-- Campo de Nombre -->
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+            <!-- Campo de Email -->
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <!-- Campo de Dirección -->
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Tu dirección" required>
+
+            <!-- Campo de Ciudad -->
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
+
+            <!-- Campo de Fecha de Expiración -->
             <label for="fecha">Fecha de Expiración</label>
-            <input type="month" name="fecha" id="fecha">
+            <input type="month" name="fecha" id="fecha" required>
         
+            <!-- Campo de CVC -->
             <label for="CVC">CVC</label>
-            <input type="text" id="CVC" name="CVC" placeholder="123">
-        
-            <input type="submit" value="Pagar" id="pagar">
+            <input type="text" id="CVC" name="CVC" placeholder="123" maxlength="4" required>
+
+            <!-- Botones de Pago -->
+            <div class="buttons-container">
+                <button type="submit" class="btn btn-primary">Pagar</button>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='https://www.paypal.com';">
+                    Pagar con PayPal
+                </button>
+            </div>
         </form>
     </div>
-    <footer class="footer">
-        <div class="footer-icons">
-            <a href="#" class="icon spotify"><i class="fa-brands fa-spotify"></i></a>
-            <a href="#" class="icon twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="icon instagram"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="footer-text">
-            <p>2024 - 2049 Todos los derechos reservados</p>
-            <p>Neon Memories.</p>
-        </div>
-    </footer>
     <script src="pago.js"></script>
     <script src="/Presentacion/script.js"></script>
 </body>
