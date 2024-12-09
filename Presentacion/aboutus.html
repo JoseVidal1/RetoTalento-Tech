@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styleabout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="stylesFooter.css">
+    <link rel="stylesheet" href="contadorvisitas.css">
 
 </head>
 
@@ -17,6 +18,11 @@
         <i class="fa-sharp fa-solid fa-bars-staggered" id="bar"></i>
         <div class="nav" id="nv">
             <ul>
+                <!-- Contador de visitas -->
+                <li class="visit-counter">
+                    <i class="fa-solid fa-eye"></i>
+                    <span id="visit-count" class="hidden">0</span>
+                </li>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="compra.html">Shop</a></li>
                 <li><a href="contactus.html">Contac Us</a></li>
@@ -56,5 +62,6 @@
     </footer>
     
     <script src="/Presentacion/script.js"></script>
+    <script src="/Presentacion/contadorvisitas.js"></script>
 </body>
 </html>
