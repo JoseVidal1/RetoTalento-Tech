@@ -9,25 +9,43 @@
     <link rel="stylesheet" href="styleCompra.css">
     <link rel="stylesheet" href="detalle.css">
     <link rel="stylesheet" href="stylesFooter.css">
+    <link rel="stylesheet" href="styleCarrito.css">
+    <link rel="stylesheet" href="contadorvisitas.css">
+
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo"><img src="/Logo/NeonMemories.png" alt="logo"></a>
+            <a href="Home.html" class="logo"><img src="/Logo/NeonMemories.png" alt=""></a>
             <i class="fa-sharp fa-solid fa-bars-staggered" id="bar"></i>
             <div class="nav" id="nv">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="compra.html">Shop</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="contactus.html">Contac Us</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
+                    <li class="visit-counter">
+                        <i class="fa-solid fa-eye"></i>
+                        <span id="visit-count" class="hidden">0</span></li>
                     <li>
-                        <i class="fa-solid fa-cart-shopping" id="carrito"></i>
+                        <button id="btn-carrito" style="background-color: transparent; border: none;"><i class="fa-solid fa-cart-shopping" id="carrito"></i></button>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <aside class="col-sm-4" id="carrito-container" style="display: none;">
+        <h3>Carrito</h3>
+        <!-- Elementos del carrito -->
+        <ul id="carritou" class="list-group"></ul>
+        <hr>
+        <!-- Precio total -->
+        <p class="text-right">Total: $ <span id="total"></span></p>
+        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        <button class="btn btn-info">
+            <a href="pago.html" target="target_blank">Pagar</a>
+        </button>
+    </aside>
     <div id="producto-detalle" class="producto-detalle"></div>
     <div id="imagenes" class="producto-detalle"></div>
    
@@ -42,7 +60,9 @@
             <p>Neon Memories.</p>
         </div>
     </footer>
+    <script type="module" src="/Presentacion/compra.js"></script>
     <script type="module" src="detalle.js"></script>
     <script src="/Presentacion/script.js"></script>
+    <script src="/Presentacion/contadorvisitas.js"></script>
 </body>
 </html>

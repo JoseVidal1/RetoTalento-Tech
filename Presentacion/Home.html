@@ -6,22 +6,24 @@
     <title>Neon Memories</title>
     <link rel="stylesheet" href="/Presentacion/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="contadorvisitas.css">
+
 </head>
 <body>
 
     <section class="main">
-         <nav class="navbar">
+        <nav class="navbar">
             <a href="#" class="logo"><img src="/Logo/NeonMemories.png" alt=""></a>
             <i class="fa-sharp fa-solid fa-bars-staggered" id="bar"></i>
             <div class="nav" id="nv">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="compra.html">Shop</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="contactus.html">Contac Us</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-                    <li>
-                        <i class="fa-solid fa-cart-shopping" id="carrito"></i>
-                    </li>
+                    <li class="visit-counter">
+                        <i class="fa-solid fa-eye"></i>
+                        <span id="visit-count" class="hidden">0</span></li>
                 </ul>
             </div>
         </nav>
@@ -29,9 +31,9 @@
          <div class="content">
             <div class="text">
                 <h1>NeonMemories</h1>
-                <p>Viaja al pasado, captura el futuro</p>
+                <p style="margin-bottom: 1rem;">Viaja al pasado, captura el futuro</p>
                 
-                <button class="shop-btn">Compra Ahora!<i class="fa-solid fa-arrow-right"></i></button>          
+                <a href="compra.html" class="shop-btn">Compra Ahora!<i class="fa-solid fa-arrow-right"></i></a>          
                 <div class="socialMedia">
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -42,5 +44,7 @@
     </section>
 
     <script src="/Presentacion/script.js"></script>
+    <script src="/Presentacion/contadorvisitas.js"></script>
+
 </body>
 </html>

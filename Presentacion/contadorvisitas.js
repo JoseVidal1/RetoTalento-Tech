@@ -1,11 +1,19 @@
-//Visitas
-const visitCountElement = document.getElementById('visit-count');
-let visitCount = localStorage.getItem('visitCount') || 0;
+if (!sessionStorage.getItem('visited')) {
 
-// Verificacion
-if (!localStorage.getItem('isUserCounted')) {
-    visitCount++;
-    localStorage.setItem('visitCount', visitCount);
-    localStorage.setItem('isUserCounted', 'true');
+    let visitas = localStorage.getItem('contador');
+
+    // Si no hay visitas almacenadas, inicializa a 0
+    if (!visitas) {
+        visitas = 0;
+    }
+    // Incrementa el contador
+    visitas++;
+
+    sessionStorage.setItem('visited', true);
+
+    // Guarda el nuevo contador en el almacenamiento local
+    localStorage.setItem('contador', visitas);
 }
-visitCountElement.textContent = visitCount;
+// Muestra el contador en la página
+const visitCountDisplay = localStorage.getItem('contador') || 0;
+document.getElementById('visit-count').textContent = visitCountDisplay;
