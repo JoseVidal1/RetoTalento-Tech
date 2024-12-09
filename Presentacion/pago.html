@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="/Presentacion/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesFooter.css">
+    <link rel="stylesheet" href="styleCarrito.css">
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Home.html" class="logo"><img src="/Logo/NeonMemories.png" alt="logo"></a>
+            <i class="fa-sharp fa-solid fa-bars-staggered" id="bar"></i>
+            <div class="nav" id="nv">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="compra.html">Shop</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li>
+                        <button id="btn-carrito" style="background-color: transparent; border: none;"><i class="fa-solid fa-cart-shopping" id="carrito"></i></button>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+        
+    </header>
+    <div class="form-container">
+        <h2>Datos de Pago</h2>
+        <form class="contact-form" id="payment-form" action="" onsubmit="return validateForm()">
+            <label for="tarjeta">Número de Tarjeta</label>
+            <input type="text" id="tarjeta" name="tarjeta" placeholder="1234 5678 9012 3456">
+        
+            <label for="fecha">Fecha de Expiración</label>
+            <input type="month" name="fecha" id="fecha">
+        
+            <label for="CVC">CVC</label>
+            <input type="text" id="CVC" name="CVC" placeholder="123">
+        
+            <input type="submit" value="Pagar" id="pagar">
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#" class="icon spotify"><i class="fa-brands fa-spotify"></i></a>
+            <a href="#" class="icon twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="icon instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>2024 - 2049 Todos los derechos reservados</p>
+            <p>Neon Memories.</p>
+        </div>
+    </footer>
+    <script src="pago.js"></script>
+    <script src="/Presentacion/script.js"></script>
+</body>
+</html>

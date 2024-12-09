@@ -1,0 +1,42 @@
+.form-container{
+    padding: 20px;
+    width: 30rem;
+}
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input, 
+.contact-form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #161618;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 0.4rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #161618;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact-form .send-button:hover{
+    background-color: black;
+    transition: 0.3s all linear;
+}
