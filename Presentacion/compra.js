@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             nombre: 'Exakta Varex',
-            descripcion: 'Un ícono de la fotografía clásica, esta cámara de 35mm combina diseño innovador con versatilidad, ideal para quienes buscan precisión y estilo retro',
+            descripcion: 'Un ícono de la fotografía clásica que marcó un hito en la industria. Esta cámara de 35mm no solo destaca por su diseño innovador y elegante, sino también por su capacidad de adaptarse a las exigencias de fotógrafos profesionales y aficionados. Su construcción robusta y su precisión técnica ofrecen una experiencia única, ideal para quienes buscan capturar imágenes con un estilo retro auténtico y una calidad inigualable. Con la Exakta Varex, estás no solo adquiriendo una cámara, sino una pieza de historia que inspira creatividad y nostalgia.',
             imagen: '/Camaras/Exakta Varex/Principal.webp',
             categoria: 'Camaras',
             precio: 200.99,
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 2,
             nombre: 'Instant Polaroid',
-            descripcion: 'La pionera de la fotografía instantánea, famosa por su rapidez y estética única. Captura momentos y obtén tus fotos al instante con un toque nostálgico.',
+            descripcion: 'La pionera indiscutible de la fotografía instantánea, esta cámara revolucionó la forma en que capturamos recuerdos. Con su capacidad de imprimir fotografías al instante, se convirtió en un ícono cultural amado por generaciones. Su rapidez, facilidad de uso y estética única transforman cada toma en una obra de arte nostálgica. Ya sea para capturar momentos espontáneos o para experimentar con su singular paleta de colores vintage, la Polaroid sigue siendo una elección perfecta para quienes buscan mezclar tecnología y tradición en un formato tan tangible como inolvidable.',
             imagen: '/Camaras/Instant Polaroid/PrincipalPol.webp',
             categoria: 'Camaras',
             precio: 199.99,
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
                 const miNodoBoton = document.createElement('button');
                 miNodoBoton.classList.add('btn', 'btn-primary');
-                miNodoBoton.textContent = 'Añadir';
+                miNodoBoton.textContent = 'Añadir al Carro';
                 miNodoBoton.setAttribute('marcador', info.id);
     
                 miNodoCardBody.appendChild(miNodoImagen);
@@ -99,8 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-primary');
-            miNodoBoton.textContent = 'Añadir';
+            miNodoBoton.textContent = 'Añadir al Carro';
             miNodoBoton.setAttribute('marcador', info.id);
+
+            //contenedor para boton
+            const contenedorBoton = document.createElement('div');
+            contenedorBoton.classList.add('btn-container');
+            // Inserta el botón dentro del contenedor
+            contenedorBoton.appendChild(miNodoBoton);
+            // Agrega el contenedor al DOM donde corresponda
+            document.body.appendChild(contenedorBoton);
+
 
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);

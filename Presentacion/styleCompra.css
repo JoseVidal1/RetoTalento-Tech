@@ -1,37 +1,31 @@
-.header-class { 
-    color: white;
-    text-align: center; 
-    width: 100%;
-    height: 100%;/* Ajusta según tus necesidades */
-}
 
-.header-fondo {
-    width: 80%;
-    height: 80%; /* Ajusta según tus necesidades */
-    margin: 0 auto;
-    background-image: url("/Fotografias/ke.jpg");
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-position: center; /* Centra la imagen */
-    height: 100%;
+/*encabezado*/
+.encabezado-img{
+    background-image: url(/Fotografias/ke.jpg);
+    height: 500px;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
 }
-.header-class section {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1rem;
+.encabezado-img img{
+    object-fit: contain;
 }
-.header-class p{
+.encabezado-img p{
+    font-size: 20px;
     text-align: center;
-    padding-top: 1rem;
-    margin: 0 auto;
-    font-size: 1.2rem;
 }
-.header-class h1 {
-    font-size: 3rem;
+.encabezado-img .textocompra{
+    color: rgb(186, 182, 182);
+    font-style: italic;
+    font-size: 22px;
 }
-.header-class {
-    padding: 6rem;
+.encabezado-img h1{
+    font-size: 4rem;
+    text-align: center;
 }
 .card {
     width:60%;
@@ -44,20 +38,48 @@
 .card-body {
 float: left;
 }
+
+
 .card-title{
     text-decoration: none;
     color:white;
     background-color: #161618;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 2rem;
     padding-bottom: 30px;
     text-align: left;
     font-weight: bold;
     border: none;
 }
+
+.btn-container {
+    display: flex; 
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    width: 20%;
+    text-align: center;
+    background-color:red;
+    margin-top: 10px;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(146, 15, 15);
+}
+
 .card-title:hover {
     cursor: pointer;
     color: red;
-
 }
 .img-fluid {
  width: 50%;
@@ -66,9 +88,12 @@ float: left;
  margin-bottom: 3rem;
 }
 .card-text {
-    font-size: 18px;
-    text-align: left;
+    font-size: 20px;
+    text-align: justify;
     margin-top: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    
 }
 
 
@@ -85,9 +110,10 @@ float: left;
 .card-title2{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     padding-bottom: 30px;
     text-align: left;
+    margin-top: 2rem;
     font-weight: bold;
     background-color: #161618;
     border: none;
@@ -105,14 +131,34 @@ float: left;
  float: left;
 }
 .card-text2 {
-    font-size: 18px;
-    text-align: left;
+    font-size: 20px;
+    text-align: justify;
     margin-top: 1rem;
+    font-style: italic;
+    margin-bottom: 10px;
 }
-
-.container-cb {
-    width: 100%;
-}
-.container-cb div{
-    margin:0 auto;
-}
+.filtro-contenedor {
+    display: flex;
+    background-color:#161618;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-top: 1rem;
+    
+  }
+  .filtro-boton{
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    width:30%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    font-weight: bold;
+    color:red
+  }
+  .filtro-boton:hover{
+    background-color: #161618be;
+    color: rgba(255, 0, 0, 0.516);
+  }
+  
