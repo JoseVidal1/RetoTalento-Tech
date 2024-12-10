@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.cargarCarritoDeLocalStorage = cargarCarritoDeLocalStorage;
     window.renderizarCarrito = renderizarCarrito;
     window.handleCarritoValue = handleCarritoValue;
+    window.vaciarCarrito =vaciarCarrito;
     botonCarrito.addEventListener('click', () => {
         // Alterna el estado de visibilidad del contenedor del carrito
         if (carritoContainer.style.display === 'none') {
@@ -250,6 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function vaciarCarrito() {
         carrito = [];
         renderizarCarrito();
+        guardarCarritoEnLocalStorage();
         handleCarritoValue(carrito.length);
     }
     //guardar en local el carrito

@@ -71,8 +71,10 @@ float: left;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom:30px ;
     transition: background-color 0.3s ease;
 }
+
 .btn:hover{
     background-color: rgb(146, 15, 15);
 }
@@ -93,7 +95,9 @@ float: left;
     margin-top: 1rem;
     font-style: italic;
     margin-bottom: 10px;
-    
+    margin-top: 0.3rem;
+    padding-bottom: 10px;
+
 }
 
 
@@ -111,9 +115,9 @@ float: left;
     text-decoration: none;
     color: white;
     font-size: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-align: left;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     font-weight: bold;
     background-color: #161618;
     border: none;
@@ -133,7 +137,7 @@ float: left;
 .card-text2 {
     font-size: 20px;
     text-align: justify;
-    margin-top: 1rem;
+    margin-top: 0.3rem;
     font-style: italic;
     margin-bottom: 10px;
 }

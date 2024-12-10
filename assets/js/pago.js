@@ -33,3 +33,6 @@ function validateForm() {
     alert('Pago procesado con éxito.');
     return true;
 }
+function vaciarCarrito(){
+    vaciarCarrito;
+}

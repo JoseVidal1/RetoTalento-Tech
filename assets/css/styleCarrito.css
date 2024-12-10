@@ -27,6 +27,9 @@
     background-color: #161618;
     color: red;
 }
+.btn-eliminar, .btn-info{
+    width: 30%;
+}
 
 #carrito-container button:hover {
     background-color: #dc3545;
